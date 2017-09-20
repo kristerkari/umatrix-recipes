@@ -45,6 +45,31 @@ youtube.com googlevideo.com * allow
 youtube.com ytimg.com * allow
 ```
 
+### Twitch
+
+Twitch + login/signup
+
+```
+twitch.tv google.com image allow
+twitch.tv google.com script allow
+twitch.tv google.com xhr allow
+twitch.tv gstatic.com script allow
+twitch.tv passport-cdn.ttvnw.net script allow
+twitch.tv spade.twitch.tv xhr allow
+twitch.tv ttvnw.net xhr allow
+twitch.tv usher.ttvnw.net xhr allow
+twitch.tv web-cdn.ttvnw.net script allow
+```
+
+Twitch without login
+
+```
+twitch.tv spade.twitch.tv xhr allow
+twitch.tv ttvnw.net xhr allow
+twitch.tv usher.ttvnw.net xhr allow
+twitch.tv web-cdn.ttvnw.net script allow
+```
+
 ## Messaging
 
 ### Slack
