@@ -120,7 +120,7 @@ github.com s3.amazonaws.com xhr allow
 
 ### Patreon
 
-Patreon uses Google's reCAPTCHA for login and Youtube for videos
+Patreon uses Google's reCAPTCHA for login and supports posting Youtube videos
 
 ```
 patreon.com cdnjs.cloudflare.com script allow
