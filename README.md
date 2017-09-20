@@ -49,7 +49,10 @@ youtube.com ytimg.com * allow
 
 ## Slack
 
+User agent spoof does not work reliably at slack.com as the web app checks for browser version from user agent.
+
 ```
+ua-spoof: slack.com false
 slack.com a.slack-edge.com script allow
 slack.com lbmulti-mgwd.lb.slack-msgs.com xhr allow
 slack.com slack-edge.com css allow
