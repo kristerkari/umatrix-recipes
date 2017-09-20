@@ -45,6 +45,19 @@ youtube.com googlevideo.com * allow
 youtube.com ytimg.com * allow
 ```
 
+## Messaging
+
+## Slack
+
+```
+slack.com a.slack-edge.com script allow
+slack.com lbmulti-mgwd.lb.slack-msgs.com xhr allow
+slack.com slack-edge.com css allow
+slack.com slack-edge.com image allow
+slack.com slack-edge.com script allow
+slack.com slack-msgs.com xhr allow
+```
+
 ## File sharing
 
 ### Dropbox
