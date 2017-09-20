@@ -44,3 +44,24 @@ youtube.com apis.google.com frame allow
 youtube.com googlevideo.com * allow
 youtube.com ytimg.com * allow
 ```
+
+## Developer
+
+### Github
+
+```
+github.com ajax.googleapis.com script allow
+github.com ghconduit.com xhr allow
+github.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com xhr allow
+github.com github-production-user-asset-6210df.s3.amazonaws.com xhr allow
+github.com github-windows.s3.amazonaws.com script allow
+github.com githubapp.com * allow
+github.com pages-themes.github.io frame allow
+github.com pages-themes.github.io script allow
+github.com raw.githubusercontent.com xhr allow
+github.com render.githubusercontent.com frame allow
+github.com render.githubusercontent.com script allow
+github.com render.githubusercontent.com xhr allow
+github.com s3.amazonaws.com other allow
+github.com s3.amazonaws.com xhr allow
+```
