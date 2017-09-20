@@ -115,3 +115,22 @@ github.com render.githubusercontent.com xhr allow
 github.com s3.amazonaws.com other allow
 github.com s3.amazonaws.com xhr allow
 ```
+
+## Crowdsourcing
+
+### Patreon
+
+Patreon uses Google's reCAPTCHA for login and Youtube for videos
+
+```
+patreon.com cdnjs.cloudflare.com script allow
+patreon.com google.com frame allow
+patreon.com google.com image allow
+patreon.com google.com script allow
+patreon.com google.com xhr allow
+patreon.com googlevideo.com xhr allow
+patreon.com gstatic.com script allow
+patreon.com youtube.com frame allow
+patreon.com youtube.com script allow
+patreon.com youtube.com xhr allow
+```
