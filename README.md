@@ -45,6 +45,17 @@ youtube.com googlevideo.com * allow
 youtube.com ytimg.com * allow
 ```
 
+## File sharing
+
+### Dropbox
+
+```
+dropbox.com 127.0.0.1 xhr allow
+dropbox.com cfl.dropboxstatic.com script allow
+dropbox.com cfl.dropboxstatic.com xhr allow
+dropbox.com www.dropboxstatic.com script allow
+```
+
 ## Developer
 
 ### Github
