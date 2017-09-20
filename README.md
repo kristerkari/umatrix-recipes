@@ -134,3 +134,16 @@ patreon.com youtube.com frame allow
 patreon.com youtube.com script allow
 patreon.com youtube.com xhr allow
 ```
+
+## Languages
+
+### Duolingo
+
+```
+duolingo.com cdnjs.cloudflare.com script allow
+duolingo.com d35aaqx5ub95lt.cloudfront.net plugin allow
+duolingo.com d35aaqx5ub95lt.cloudfront.net script allow
+duolingo.com d3kwyfyztuo0xs.cloudfront.net xhr allow
+duolingo.com d7mj4aqfscim2.cloudfront.net plugin allow
+duolingo.com d7mj4aqfscim2.cloudfront.net script allow
+```
