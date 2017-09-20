@@ -8,7 +8,7 @@ Sources:
 
 ### Facebook
 
-**allow facebook.* ONLY on Facebook, blocked everywhere else**
+**allow Facebook ONLY on Facebook, blocked everywhere else**
 
 ```
 * facebook.com * block
@@ -19,7 +19,7 @@ facebook.com fbstatic-a.akamaihd.net * allow
 
 ### Twitter
 
-**allow twitter.* ONLY on Twitter, blocked everywhere else**
+**allow Twitter ONLY on Twitter, blocked everywhere else**
 
 ```
 * twitter.com * block
