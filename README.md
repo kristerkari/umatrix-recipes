@@ -32,3 +32,15 @@ twitter.com video.twimg.com xhr allow
 twitter.com www.pscp.tv frame allow
 twitter.com www.pscp.tv script allow
 ```
+
+### Youtube
+
+Youtube + log in (using accounts.google.com)
+
+```
+accounts.google.com ssl.gstatic.com xhr allow
+youtube.com apis.google.com * allow
+youtube.com apis.google.com frame allow
+youtube.com googlevideo.com * allow
+youtube.com ytimg.com * allow
+```
