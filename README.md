@@ -70,6 +70,17 @@ twitch.tv usher.ttvnw.net xhr allow
 twitch.tv web-cdn.ttvnw.net script allow
 ```
 
+### LinkedIn
+
+**allow LinkedIn ONLY on LinkedIn, blocked everywhere else**
+
+```
+* linkedin.com * block
+linkedin.com linkedin.com * allow
+linkedin.com static.licdn.com script allow
+linkedin.com static.licdn.com xhr allow
+```
+
 ## Messaging
 
 ### Slack
