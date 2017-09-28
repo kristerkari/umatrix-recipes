@@ -158,3 +158,17 @@ duolingo.com d3kwyfyztuo0xs.cloudfront.net xhr allow
 duolingo.com d7mj4aqfscim2.cloudfront.net plugin allow
 duolingo.com d7mj4aqfscim2.cloudfront.net script allow
 ```
+
+## Graphics
+
+### Zeplin
+
+- Throws an error if Stripe does not get loaded.
+- Uses Pusher for real time updates.
+
+```
+zeplin.io checkout.stripe.com frame allow
+zeplin.io checkout.stripe.com script allow
+zeplin.io checkout.stripe.com xhr allow
+zeplin.io ws-zeplin.pusher.com xhr allow
+```
