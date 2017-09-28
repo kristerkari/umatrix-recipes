@@ -39,10 +39,8 @@ Youtube + log in (using accounts.google.com)
 
 ```
 accounts.google.com ssl.gstatic.com xhr allow
-youtube.com apis.google.com * allow
-youtube.com apis.google.com frame allow
-youtube.com googlevideo.com * allow
-youtube.com ytimg.com * allow
+youtube.com googlevideo.com xhr allow
+youtube.com ytimg.com image allow
 ```
 
 ### Twitch
