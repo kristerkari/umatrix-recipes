@@ -159,6 +159,33 @@ duolingo.com d7mj4aqfscim2.cloudfront.net plugin allow
 duolingo.com d7mj4aqfscim2.cloudfront.net script allow
 ```
 
+### LingQ
+
+Used 3rd party services:
+- Amazon Web Services (AWS)
+- Google APIs
+- Goole Recaptcha
+- CDNJS
+- Youtube for lessons with videos
+
+```
+lingq.com ajax.googleapis.com script allow
+lingq.com amazonaws.com * allow
+lingq.com cdnjs.cloudflare.com script allow
+lingq.com google.com cookie allow
+lingq.com google.com frame allow
+lingq.com google.com image allow
+lingq.com google.com script allow
+lingq.com google.com xhr allow
+lingq.com googlevideo.com xhr allow
+lingq.com gstatic.com css allow
+lingq.com gstatic.com script allow
+lingq.com s.ytimg.com script allow
+lingq.com www.youtube.com frame allow
+lingq.com www.youtube.com script allow
+lingq.com www.youtube.com xhr allow
+```
+
 ## Graphics
 
 ### Zeplin
