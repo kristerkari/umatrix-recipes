@@ -209,3 +209,12 @@ getpocket.com google.com script allow
 getpocket.com google.com xhr allow
 getpocket.com www.gstatic.com script allow
 ```
+
+### Instapaper
+
+Used 3rd party services to whitelist:
+- Amazon Web Services (AWS) S3
+
+```
+instapaper.com staticinstapaper.s3.amazonaws.com script allow
+```
