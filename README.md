@@ -194,3 +194,18 @@ zeplin.io checkout.stripe.com script allow
 zeplin.io checkout.stripe.com xhr allow
 zeplin.io ws-zeplin.pusher.com xhr allow
 ```
+
+## Bookmarking services
+
+### Pocket
+
+Used 3rd party services to whitelist:
+- Google's reCAPTCHA for login
+
+```
+getpocket.com google.com frame allow
+getpocket.com google.com image allow
+getpocket.com google.com script allow
+getpocket.com google.com xhr allow
+getpocket.com www.gstatic.com script allow
+```
