@@ -24,13 +24,10 @@ facebook.com fbstatic-a.akamaihd.net * allow
 ```
 * twitter.com * block
 twitter.com abs.twimg.com script allow
-twitter.com assets.pscp.tv script allow
 twitter.com ton.twimg.com script allow
 twitter.com twitter.com * allow
-twitter.com twitter.com cookie allow
+twitter.com video.twimg.com plugin allow
 twitter.com video.twimg.com xhr allow
-twitter.com www.pscp.tv frame allow
-twitter.com www.pscp.tv script allow
 ```
 
 ### Youtube
