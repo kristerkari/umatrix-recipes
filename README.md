@@ -172,7 +172,9 @@ lingq.com googlevideo.com xhr allow
 lingq.com gstatic.com css allow
 lingq.com gstatic.com script allow
 lingq.com s.ytimg.com script allow
+lingq.com www.youtube.com css allow
 lingq.com www.youtube.com frame allow
+lingq.com www.youtube.com image allow
 lingq.com www.youtube.com script allow
 lingq.com www.youtube.com xhr allow
 ```
