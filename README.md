@@ -214,3 +214,16 @@ Used 3rd party services to whitelist:
 ```
 instapaper.com staticinstapaper.s3.amazonaws.com script allow
 ```
+
+## Question & Answer websites
+
+### Stack Overflow
+
+
+Used 3rd party services to whitelist:
+- Google APIs
+
+```
+stackoverflow.com ajax.googleapis.com script allow
+stackoverflow.com cdn.sstatic.net script allow
+```
