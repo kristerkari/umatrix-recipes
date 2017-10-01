@@ -98,6 +98,7 @@ slack.com slack-msgs.com xhr allow
 dropbox.com 127.0.0.1 xhr allow
 dropbox.com cfl.dropboxstatic.com script allow
 dropbox.com cfl.dropboxstatic.com xhr allow
+dropbox.com dl.dropboxusercontent.com frame allow
 dropbox.com www.dropboxstatic.com script allow
 ```
 
