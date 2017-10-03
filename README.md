@@ -229,3 +229,11 @@ Used 3rd party services to whitelist:
 stackoverflow.com ajax.googleapis.com script allow
 stackoverflow.com cdn.sstatic.net script allow
 ```
+
+## Presentation sharing
+
+### Speakerdeck
+
+```
+speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
+```
