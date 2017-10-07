@@ -143,7 +143,7 @@ github.com render.githubusercontent.com xhr allow
 - Uses Google's reCAPTCHA for login
 - Supports posting Youtube videos
 
-**Used 3rd party services to whitelist:**
+**3rd-party services to whitelist:**
 - [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
 - [Youtube](https://en.wikipedia.org/wiki/YouTube)
 
@@ -164,7 +164,7 @@ patreon.com youtube.com xhr allow
 
 ### Duolingo
 
-Used 3rd party services to whitelist:
+**3rd-party services to whitelist:**
 - [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
 - [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
 
@@ -183,7 +183,7 @@ duolingo.com d7mj4aqfscim2.cloudfront.net script allow
 - You can not access the site without whitelisting google.com
 - Uses Youtube for lessons with videos
 
-**Used 3rd party services to whitelist:**
+**3rd-party services to whitelist:**
 - [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
 - [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
 - [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
@@ -218,7 +218,7 @@ lingq.com www.youtube.com xhr allow
 - Throws an error if Stripe does not get loaded.
 - Uses Pusher for real time updates.
 
-**Used 3rd party services to whitelist:**
+**3rd-party services to whitelist:**
 - [Stripe](https://stripe.com) payments
 - [Pusher](https://pusher.com) service
 
@@ -236,7 +236,7 @@ zeplin.io ws-zeplin.pusher.com xhr allow
 **Info**
 - You can not login without whitelisting reCAPTCHA.
 
-**Used 3rd party services to whitelist:**
+**3rd-party services to whitelist:**
 - [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
 
 ```
@@ -249,7 +249,7 @@ getpocket.com www.gstatic.com script allow
 
 ### Instapaper
 
-Used 3rd party services to whitelist:
+**3rd-party services to whitelist:**
 - [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
 
 ```
@@ -260,7 +260,7 @@ instapaper.com staticinstapaper.s3.amazonaws.com script allow
 
 ### Stack Overflow
 
-Used 3rd party services to whitelist:
+**3rd-party services to whitelist:**
 - [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
 
 ```
@@ -272,7 +272,7 @@ stackoverflow.com cdn.sstatic.net script allow
 
 ### Speakerdeck
 
-Used 3rd party services to whitelist:
+**3rd-party services to whitelist:**
 - [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
 
 ```
