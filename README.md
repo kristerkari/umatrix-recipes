@@ -2,7 +2,7 @@
 
 > uMatrix put you in full control of where your browser is allowed to connect, what type of data it is allowed to download, and what it is allowed to execute. Nobody else decides for you: You choose. You are in full control of your privacy.
 
-uMatrix is a great browser extension that by default blocks website's 3rd-party requests and allows you to whitelist 3rd-party requests for each website.
+**[uMatrix](https://github.com/gorhill/uMatrix)** is a great browser extension that by default blocks website's 3rd-party requests and allows you to whitelist 3rd-party requests for each website.
 
 Using uMatrix is good for your privacy, but it also breaks most of the websites by blocking critial scripts or assets.
 
