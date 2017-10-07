@@ -181,6 +181,7 @@ duolingo.com d7mj4aqfscim2.cloudfront.net script allow
 
 **Info**
 - You can not access the site without whitelisting google.com
+- If you try to spoof referer, you will be logged out and ask to fill reCAPTCHA.
 - Uses Youtube for lessons with videos
 
 **3rd-party services to whitelist:**
@@ -191,6 +192,7 @@ duolingo.com d7mj4aqfscim2.cloudfront.net script allow
 - [Youtube](https://en.wikipedia.org/wiki/YouTube)
 
 ```
+referrer-spoof: lingq.com false
 lingq.com ajax.googleapis.com script allow
 lingq.com amazonaws.com * allow
 lingq.com cdnjs.cloudflare.com script allow
