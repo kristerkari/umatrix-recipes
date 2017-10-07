@@ -1,8 +1,24 @@
 # uMatrix Recipes
 
-Sources:
+> uMatrix put you in full control of where your browser is allowed to connect, what type of data it is allowed to download, and what it is allowed to execute. Nobody else decides for you: You choose. You are in full control of your privacy.
+
+uMatrix is a great browser extension that by default blocks website's 3rd-party requests and allows you to whitelist 3rd-party requests for each website.
+
+Using uMatrix is good for your privacy, but it also breaks most of the websites by blocking critial scripts or assets.
+
+"uMatrix Recipes" is a collection of rules that you can use to fix some popular websites by whitelisting the 3rd-party requests that are critical for the websites to function.
+
+Sources for some of the rules:
 - https://github.com/gorhill/uMatrix/wiki/Examples-of-useful-rulesets
 - https://github.com/Rictusempra/uMatrix-Rules
+
+### How to whitelist a website:
+
+1. Go to uMatrix's settings.
+2. Go to "My rules" tab.
+3. Click "Edit" button in "Temporary rules".
+4. Copy/paste any of the rules from here to the end of the list.
+5. Click "Save" and then "Commit".
 
 ## Social media
 
@@ -80,7 +96,8 @@ linkedin.com static.licdn.com xhr allow
 
 ### Slack
 
-User agent spoof does not work reliably at slack.com as the web app checks for browser version from user agent.
+**Info**
+- User agent spoof does not work reliably at slack.com as the web app checks for browser version from user agent.
 
 ```
 ua-spoof: slack.com false
@@ -122,7 +139,13 @@ github.com render.githubusercontent.com xhr allow
 
 ### Patreon
 
-Patreon uses Google's reCAPTCHA for login and supports posting Youtube videos
+**Info**
+- Uses Google's reCAPTCHA for login
+- Supports posting Youtube videos
+
+**Used 3rd party services to whitelist:**
+- [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
+- [Youtube](https://en.wikipedia.org/wiki/YouTube)
 
 ```
 patreon.com cdnjs.cloudflare.com script allow
@@ -141,6 +164,10 @@ patreon.com youtube.com xhr allow
 
 ### Duolingo
 
+Used 3rd party services to whitelist:
+- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
+- [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
+
 ```
 duolingo.com cdnjs.cloudflare.com script allow
 duolingo.com d35aaqx5ub95lt.cloudfront.net plugin allow
@@ -152,12 +179,16 @@ duolingo.com d7mj4aqfscim2.cloudfront.net script allow
 
 ### LingQ
 
-Used 3rd party services:
-- Amazon Web Services (AWS)
-- Google APIs
-- Goole Recaptcha
-- CDNJS
-- Youtube for lessons with videos
+**Info**
+- You can not access the site without whitelisting google.com
+- Uses Youtube for lessons with videos
+
+**Used 3rd party services to whitelist:**
+- [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
+- [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
+- [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
+- [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
+- [Youtube](https://en.wikipedia.org/wiki/YouTube)
 
 ```
 lingq.com ajax.googleapis.com script allow
@@ -183,8 +214,13 @@ lingq.com www.youtube.com xhr allow
 
 ### Zeplin
 
+**Info**
 - Throws an error if Stripe does not get loaded.
 - Uses Pusher for real time updates.
+
+**Used 3rd party services to whitelist:**
+- [Stripe](https://stripe.com) payments
+- [Pusher](https://pusher.com) service
 
 ```
 zeplin.io checkout.stripe.com frame allow
@@ -197,8 +233,11 @@ zeplin.io ws-zeplin.pusher.com xhr allow
 
 ### Pocket
 
-Used 3rd party services to whitelist:
-- Google's reCAPTCHA for login
+**Info**
+- You can not login without whitelisting reCAPTCHA.
+
+**Used 3rd party services to whitelist:**
+- [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
 
 ```
 getpocket.com google.com frame allow
@@ -211,7 +250,7 @@ getpocket.com www.gstatic.com script allow
 ### Instapaper
 
 Used 3rd party services to whitelist:
-- Amazon Web Services (AWS) S3
+- [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
 
 ```
 instapaper.com staticinstapaper.s3.amazonaws.com script allow
@@ -221,9 +260,8 @@ instapaper.com staticinstapaper.s3.amazonaws.com script allow
 
 ### Stack Overflow
 
-
 Used 3rd party services to whitelist:
-- Google APIs
+- [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
 
 ```
 stackoverflow.com ajax.googleapis.com script allow
@@ -233,6 +271,9 @@ stackoverflow.com cdn.sstatic.net script allow
 ## Presentation sharing
 
 ### Speakerdeck
+
+Used 3rd party services to whitelist:
+- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
 
 ```
 speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
