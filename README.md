@@ -144,10 +144,13 @@ github.com render.githubusercontent.com xhr allow
 - [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
 - [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
 - [Imgix](https://www.imgix.com) Service
+- [Stripe](https://stripe.com) payments
 
 ```
 kickstarter.com a248.e.akamai.net script allow
 kickstarter.com d3mlfyygrfdi2i.cloudfront.net plugin allow
+kickstarter.com js.stripe.com frame allow
+kickstarter.com js.stripe.com script allow
 kickstarter.com ksr-video.imgix.net plugin allow
 kickstarter.com s3.amazonaws.com image allow
 kickstarter.com s3.amazonaws.com plugin allow
