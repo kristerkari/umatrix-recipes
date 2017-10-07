@@ -137,6 +137,22 @@ github.com render.githubusercontent.com xhr allow
 
 ## Crowdsourcing
 
+### Kickstarter
+
+**3rd-party services to whitelist:**
+- [Akamai](https://en.wikipedia.org/wiki/Akamai_Technologies) Content Delivery Network
+- [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
+- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
+- [Imgix](https://www.imgix.com) Service
+
+```
+kickstarter.com a248.e.akamai.net script allow
+kickstarter.com d3mlfyygrfdi2i.cloudfront.net plugin allow
+kickstarter.com ksr-video.imgix.net plugin allow
+kickstarter.com s3.amazonaws.com image allow
+kickstarter.com s3.amazonaws.com plugin allow
+```
+
 ### Patreon
 
 **Info**
