@@ -66,18 +66,42 @@ twitch.tv google.com script allow
 twitch.tv google.com xhr allow
 twitch.tv gstatic.com script allow
 twitch.tv passport-cdn.ttvnw.net script allow
-twitch.tv spade.twitch.tv xhr allow
+twitch.tv 0914.global.ssl.fastly.net script allow
+twitch.tv 0914.global.ssl.fastly.net xhr allow
+twitch.tv algolia.net script allow
+twitch.tv algolia.net xhr allow
+twitch.tv algolianet.com script allow
+twitch.tv algolianet.com xhr allow
+twitch.tv polyfill.twitchsvc.net script allow
+twitch.tv s.jtvnw.net image allow
+twitch.tv sctatic.twitchcdn.net script allow
+twitch.tv sentinel.twitchsvc.net xhr allow
+twitch.tv static-cdn.jtvnw.net image allow
+twitch.tv static.twitchcdn.net css allow
+twitch.tv static.twitchcdn.net image allow
+twitch.tv static.twitchcdn.net script allow
 twitch.tv ttvnw.net xhr allow
-twitch.tv usher.ttvnw.net xhr allow
 twitch.tv web-cdn.ttvnw.net script allow
 ```
 
 Twitch without login
 
 ```
-twitch.tv spade.twitch.tv xhr allow
+twitch.tv 0914.global.ssl.fastly.net script allow
+twitch.tv 0914.global.ssl.fastly.net xhr allow
+twitch.tv algolia.net script allow
+twitch.tv algolia.net xhr allow
+twitch.tv algolianet.com script allow
+twitch.tv algolianet.com xhr allow
+twitch.tv polyfill.twitchsvc.net script allow
+twitch.tv s.jtvnw.net image allow
+twitch.tv sctatic.twitchcdn.net script allow
+twitch.tv sentinel.twitchsvc.net xhr allow
+twitch.tv static-cdn.jtvnw.net image allow
+twitch.tv static.twitchcdn.net css allow
+twitch.tv static.twitchcdn.net image allow
+twitch.tv static.twitchcdn.net script allow
 twitch.tv ttvnw.net xhr allow
-twitch.tv usher.ttvnw.net xhr allow
 twitch.tv web-cdn.ttvnw.net script allow
 ```
 
