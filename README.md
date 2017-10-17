@@ -30,7 +30,7 @@ Sources for some of the rules:
 * facebook.com * block
 * facebook.net * block
 facebook.com facebook.com * allow
-facebook.com fbstatic-a.akamaihd.net * allow
+facebook.com fbcdn.net * allow
 ```
 
 ### Twitter
