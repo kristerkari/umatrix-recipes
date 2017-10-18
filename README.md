@@ -323,3 +323,15 @@ stackoverflow.com cdn.sstatic.net script allow
 ```
 speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
 ```
+
+## Social networking
+
+### Meetup
+
+**3rd-party services to whitelist:**
+- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
+
+```
+meetup.com dna8twue3dlxq.cloudfront.net script allow
+meetup.com secure.meetupstatic.com script allow
+```
