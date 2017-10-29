@@ -335,3 +335,12 @@ speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
 meetup.com dna8twue3dlxq.cloudfront.net script allow
 meetup.com secure.meetupstatic.com script allow
 ```
+
+## Hotels / renting services
+
+### AirBnB
+
+```
+airbnb.com a0.muscache.com script allow
+airbnb.com maps.googleapis.com script allow
+```
