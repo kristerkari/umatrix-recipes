@@ -1,16 +1,25 @@
 # uMatrix Recipes
 
-> uMatrix put you in full control of where your browser is allowed to connect, what type of data it is allowed to download, and what it is allowed to execute. Nobody else decides for you: You choose. You are in full control of your privacy.
+> uMatrix put you in full control of where your browser is allowed to connect,
+> what type of data it is allowed to download, and what it is allowed to
+> execute. Nobody else decides for you: You choose. You are in full control of
+> your privacy.
 
-**[uMatrix](https://github.com/gorhill/uMatrix)** is a great browser extension that by default blocks website's 3rd-party requests and allows you to whitelist 3rd-party requests for each website.
+**[uMatrix](https://github.com/gorhill/uMatrix)** is a great browser extension
+that by default blocks website's 3rd-party requests and allows you to whitelist
+3rd-party requests for each website.
 
-Using uMatrix is good for your privacy, but it also breaks most of the websites by blocking critial scripts or assets.
+Using uMatrix is good for your privacy, but it also breaks most of the websites
+by blocking critial scripts or assets.
 
-"uMatrix Recipes" is a collection of rules that you can use to fix some popular websites by whitelisting the 3rd-party requests that are critical for the websites to function.
+"uMatrix Recipes" is a collection of rules that you can use to fix some popular
+websites by whitelisting the 3rd-party requests that are critical for the
+websites to function.
 
 Sources for some of the rules:
-- https://github.com/gorhill/uMatrix/wiki/Examples-of-useful-rulesets
-- https://github.com/Rictusempra/uMatrix-Rules
+
+* https://github.com/gorhill/uMatrix/wiki/Examples-of-useful-rulesets
+* https://github.com/Rictusempra/uMatrix-Rules
 
 ### How to whitelist a website:
 
@@ -121,7 +130,9 @@ linkedin.com static.licdn.com xhr allow
 ### Slack
 
 **Info**
-- User agent spoof does not work reliably at slack.com as the web app checks for browser version from user agent.
+
+* User agent spoof does not work reliably at slack.com as the web app checks for
+  browser version from user agent.
 
 ```
 ua-spoof: slack.com false
@@ -165,11 +176,14 @@ github.com render.githubusercontent.com xhr allow
 ### Kickstarter
 
 **3rd-party services to whitelist:**
-- [Akamai](https://en.wikipedia.org/wiki/Akamai_Technologies) Content Delivery Network
-- [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
-- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
-- [Imgix](https://www.imgix.com) Service
-- [Stripe](https://stripe.com) payments
+
+* [Akamai](https://en.wikipedia.org/wiki/Akamai_Technologies) Content Delivery
+  Network
+* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
+* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
+  Delivery Network
+* [Imgix](https://www.imgix.com) Service
+* [Stripe](https://stripe.com) payments
 
 ```
 kickstarter.com a248.e.akamai.net script allow
@@ -184,12 +198,14 @@ kickstarter.com s3.amazonaws.com plugin allow
 ### Patreon
 
 **Info**
-- Uses Google's reCAPTCHA for login
-- Supports posting Youtube videos
+
+* Uses Google's reCAPTCHA for login
+* Supports posting Youtube videos
 
 **3rd-party services to whitelist:**
-- [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
-- [Youtube](https://en.wikipedia.org/wiki/YouTube)
+
+* [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
+* [Youtube](https://en.wikipedia.org/wiki/YouTube)
 
 ```
 patreon.com cdnjs.cloudflare.com script allow
@@ -209,8 +225,10 @@ patreon.com youtube.com xhr allow
 ### Duolingo
 
 **3rd-party services to whitelist:**
-- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
-- [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
+
+* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
+  Delivery Network
+* [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
 
 ```
 duolingo.com cdnjs.cloudflare.com script allow
@@ -224,16 +242,18 @@ duolingo.com d7mj4aqfscim2.cloudfront.net script allow
 ### LingQ
 
 **Info**
-- You can not access the site without whitelisting google.com
-- If you try to spoof referer, you will be logged out and ask to fill reCAPTCHA.
-- Uses Youtube for lessons with videos
+
+* You can not access the site without whitelisting google.com
+* If you try to spoof referer, you will be logged out and ask to fill reCAPTCHA.
+* Uses Youtube for lessons with videos
 
 **3rd-party services to whitelist:**
-- [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
-- [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
-- [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
-- [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
-- [Youtube](https://en.wikipedia.org/wiki/YouTube)
+
+* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
+* [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
+* [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
+* [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
+* [Youtube](https://en.wikipedia.org/wiki/YouTube)
 
 ```
 referrer-spoof: lingq.com false
@@ -261,12 +281,14 @@ lingq.com www.youtube.com xhr allow
 ### Zeplin
 
 **Info**
-- Throws an error if Stripe does not get loaded.
-- Uses Pusher for real time updates.
+
+* Throws an error if Stripe does not get loaded.
+* Uses Pusher for real time updates.
 
 **3rd-party services to whitelist:**
-- [Stripe](https://stripe.com) payments
-- [Pusher](https://pusher.com) service
+
+* [Stripe](https://stripe.com) payments
+* [Pusher](https://pusher.com) service
 
 ```
 zeplin.io checkout.stripe.com frame allow
@@ -280,10 +302,12 @@ zeplin.io ws-zeplin.pusher.com xhr allow
 ### Pocket
 
 **Info**
-- You can not login without whitelisting reCAPTCHA.
+
+* You can not login without whitelisting reCAPTCHA.
 
 **3rd-party services to whitelist:**
-- [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
+
+* [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
 
 ```
 getpocket.com google.com frame allow
@@ -296,7 +320,8 @@ getpocket.com www.gstatic.com script allow
 ### Instapaper
 
 **3rd-party services to whitelist:**
-- [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
+
+* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
 
 ```
 instapaper.com staticinstapaper.s3.amazonaws.com script allow
@@ -307,7 +332,8 @@ instapaper.com staticinstapaper.s3.amazonaws.com script allow
 ### Stack Overflow
 
 **3rd-party services to whitelist:**
-- [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
+
+* [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
 
 ```
 stackoverflow.com ajax.googleapis.com script allow
@@ -319,7 +345,9 @@ stackoverflow.com cdn.sstatic.net script allow
 ### Speakerdeck
 
 **3rd-party services to whitelist:**
-- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
+
+* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
+  Delivery Network
 
 ```
 speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
@@ -330,7 +358,9 @@ speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
 ### Meetup
 
 **3rd-party services to whitelist:**
-- [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content Delivery Network
+
+* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
+  Delivery Network
 
 ```
 meetup.com dna8twue3dlxq.cloudfront.net script allow
