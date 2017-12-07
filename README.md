@@ -129,6 +129,7 @@ slack.com slack-edge.com css allow
 slack.com slack-edge.com image allow
 slack.com slack-edge.com script allow
 slack.com slack-msgs.com xhr allow
+slack.com slack.global.ssl.fastly.net media allow
 ```
 
 ## File sharing
