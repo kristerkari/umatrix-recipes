@@ -375,3 +375,12 @@ meetup.com secure.meetupstatic.com script allow
 airbnb.com a0.muscache.com script allow
 airbnb.com maps.googleapis.com script allow
 ```
+
+## Music
+
+### Bandcamp
+
+```
+bandcamp.com s4.bcbits.com script allow
+bandcamp.com t4.bcbits.com media allow
+```
