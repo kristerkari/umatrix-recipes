@@ -171,6 +171,12 @@ github.com render.githubusercontent.com script allow
 github.com render.githubusercontent.com xhr allow
 ```
 
+### Gitlab
+
+```
+gitlab.com assets.gitlab-static.net script allow
+```
+
 ## Crowdsourcing
 
 ### Kickstarter
