@@ -399,6 +399,7 @@ speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
 ```
 meetup.com dna8twue3dlxq.cloudfront.net script allow
 meetup.com secure.meetupstatic.com script allow
+meetup.com secure.meetupstatic.com xhr allow
 ```
 
 ## Hotels / renting services
