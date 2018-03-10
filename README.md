@@ -418,3 +418,14 @@ airbnb.com maps.googleapis.com script allow
 bandcamp.com s4.bcbits.com script allow
 bandcamp.com t4.bcbits.com media allow
 ```
+
+### Soundcloud
+
+```
+soundcloud.com a-v2.sndcdn.com script allow
+soundcloud.com a-v2.sndcdn.com xhr allow
+soundcloud.com cf-hls-media.sndcdn.com xhr allow
+soundcloud.com i1.sndcdn.com xhr allow
+soundcloud.com style.sndcdn.com xhr allow
+soundcloud.com wis.sndcdn.com xhr allow
+```
