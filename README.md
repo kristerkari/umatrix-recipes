@@ -290,6 +290,26 @@ lingq.com www.youtube.com script allow
 lingq.com www.youtube.com xhr allow
 ```
 
+### Mango Languages
+
+**3rd-party services to whitelist:**
+
+* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
+  Delivery Network
+* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
+* Google's translation API
+* [Adobe's Typekit](https://typekit.com/)
+
+```
+mangolanguages.com d10lpsik1i8c69.cloudfront.net script allow
+mangolanguages.com d1w9q16ymlsf74.cloudfront.net frame allow
+mangolanguages.com d1w9q16ymlsf74.cloudfront.net script allow
+mangolanguages.com d1w9q16ymlsf74.cloudfront.net xhr allow
+mangolanguages.com mango-assets-production.s3.amazonaws.com xhr allow
+mangolanguages.com translation.googleapis.com xhr allow
+mangolanguages.com use.typekit.net script allow
+```
+
 ## Graphics
 
 ### Zeplin
