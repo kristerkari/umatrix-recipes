@@ -23,11 +23,11 @@ Sources for some of the rules:
 
 ### How to whitelist a website:
 
-1. Go to uMatrix's settings.
-2. Go to "My rules" tab.
-3. Click "Edit" button in "Temporary rules".
-4. Copy/paste any of the rules from here to the end of the list.
-5. Click "Save" and then "Commit".
+1.  Go to uMatrix's settings.
+2.  Go to "My rules" tab.
+3.  Click "Edit" button in "Temporary rules".
+4.  Copy/paste any of the rules from here to the end of the list.
+5.  Click "Save" and then "Commit".
 
 ## Social media
 
@@ -62,6 +62,9 @@ Youtube + log in (using accounts.google.com)
 ```
 accounts.google.com ssl.gstatic.com xhr allow
 youtube.com googlevideo.com xhr allow
+youtube.com googlevideo.com media allow
+youtube.com s.ytimg.com script allow
+youtube.com www.gstatic.com script allow
 youtube.com ytimg.com image allow
 ```
 
@@ -141,6 +144,7 @@ slack.com slack-edge.com image allow
 slack.com slack-edge.com script allow
 slack.com slack-msgs.com xhr allow
 slack.com slack.global.ssl.fastly.net media allow
+slack.com universal.slack-core.com xhr allow
 ```
 
 ## File sharing
@@ -238,11 +242,15 @@ patreon.com youtube.com xhr allow
 
 ```
 duolingo.com cdnjs.cloudflare.com script allow
-duolingo.com d35aaqx5ub95lt.cloudfront.net plugin allow
+duolingo.com d1vq87e9lcf771.cloudfront.net media allow
+duolingo.com d35aaqx5ub95lt.cloudfront.net media allow
 duolingo.com d35aaqx5ub95lt.cloudfront.net script allow
+duolingo.com d35aaqx5ub95lt.cloudfront.net xhr allow
 duolingo.com d3kwyfyztuo0xs.cloudfront.net xhr allow
-duolingo.com d7mj4aqfscim2.cloudfront.net plugin allow
+duolingo.com d7mj4aqfscim2.cloudfront.net media allow
 duolingo.com d7mj4aqfscim2.cloudfront.net script allow
+duolingo.com d7mj4aqfscim2.cloudfront.net xhr allow
+duolingo.com ljknv3sref.execute-api.us-east-1.amazonaws.com xhr allow
 ```
 
 ### LingQ
