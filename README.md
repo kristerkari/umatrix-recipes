@@ -117,35 +117,7 @@ twitch.tv ttvnw.net xhr allow
 twitch.tv web-cdn.ttvnw.net script allow
 ```
 
-### LinkedIn
-
-**allow LinkedIn ONLY on LinkedIn, blocked everywhere else**
-
-```
-* linkedin.com * block
-linkedin.com linkedin.com * allow
-linkedin.com static.licdn.com script allow
-linkedin.com static.licdn.com xhr allow
-```
-
 ## Messaging
-
-### Slack
-
-**Info**
-
-* User agent spoof does not work reliably at slack.com as the web app checks for
-  browser version from user agent.
-
-```
-ua-spoof: slack.com false
-slack.com slack-edge.com css allow
-slack.com slack-edge.com image allow
-slack.com slack-edge.com script allow
-slack.com slack-msgs.com xhr allow
-slack.com slack.global.ssl.fastly.net media allow
-slack.com universal.slack-core.com xhr allow
-```
 
 ## File sharing
 
@@ -183,28 +155,6 @@ gitlab.com assets.gitlab-static.net script allow
 
 ## Crowdsourcing
 
-### Kickstarter
-
-**3rd-party services to whitelist:**
-
-* [Akamai](https://en.wikipedia.org/wiki/Akamai_Technologies) Content Delivery
-  Network
-* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
-* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
-  Delivery Network
-* [Imgix](https://www.imgix.com) Service
-* [Stripe](https://stripe.com) payments
-
-```
-kickstarter.com a248.e.akamai.net script allow
-kickstarter.com d3mlfyygrfdi2i.cloudfront.net plugin allow
-kickstarter.com js.stripe.com frame allow
-kickstarter.com js.stripe.com script allow
-kickstarter.com ksr-video.imgix.net plugin allow
-kickstarter.com s3.amazonaws.com image allow
-kickstarter.com s3.amazonaws.com plugin allow
-```
-
 ### Patreon
 
 **Info**
@@ -230,137 +180,6 @@ patreon.com youtube.com script allow
 patreon.com youtube.com xhr allow
 ```
 
-## Languages
-
-### Duolingo
-
-**3rd-party services to whitelist:**
-
-* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
-  Delivery Network
-* [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
-
-```
-duolingo.com cdnjs.cloudflare.com script allow
-duolingo.com d1vq87e9lcf771.cloudfront.net media allow
-duolingo.com d35aaqx5ub95lt.cloudfront.net media allow
-duolingo.com d35aaqx5ub95lt.cloudfront.net script allow
-duolingo.com d35aaqx5ub95lt.cloudfront.net xhr allow
-duolingo.com d3kwyfyztuo0xs.cloudfront.net xhr allow
-duolingo.com d7mj4aqfscim2.cloudfront.net media allow
-duolingo.com d7mj4aqfscim2.cloudfront.net script allow
-duolingo.com d7mj4aqfscim2.cloudfront.net xhr allow
-duolingo.com ljknv3sref.execute-api.us-east-1.amazonaws.com xhr allow
-```
-
-### LingQ
-
-**Info**
-
-* You can not access the site without whitelisting google.com
-* If you try to spoof referer, you will be logged out and ask to fill reCAPTCHA.
-* Uses Youtube for lessons with videos
-
-**3rd-party services to whitelist:**
-
-* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
-* [Google APIs](https://en.wikipedia.org/wiki/Google_APIs)
-* [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
-* [CNDJS](https://github.com/cdnjs/cdnjs) Content Delivery Network
-* [Youtube](https://en.wikipedia.org/wiki/YouTube)
-
-```
-referrer-spoof: lingq.com false
-lingq.com ajax.googleapis.com script allow
-lingq.com amazonaws.com * allow
-lingq.com cdnjs.cloudflare.com script allow
-lingq.com google.com cookie allow
-lingq.com google.com frame allow
-lingq.com google.com image allow
-lingq.com google.com script allow
-lingq.com google.com xhr allow
-lingq.com googlevideo.com xhr allow
-lingq.com gstatic.com css allow
-lingq.com gstatic.com script allow
-lingq.com s.ytimg.com script allow
-lingq.com www.youtube.com css allow
-lingq.com www.youtube.com frame allow
-lingq.com www.youtube.com image allow
-lingq.com www.youtube.com script allow
-lingq.com www.youtube.com xhr allow
-```
-
-### Mango Languages
-
-**3rd-party services to whitelist:**
-
-* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
-  Delivery Network
-* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
-* Google's translation API
-* [Adobe's Typekit](https://typekit.com/)
-
-```
-mangolanguages.com d10lpsik1i8c69.cloudfront.net script allow
-mangolanguages.com d1w9q16ymlsf74.cloudfront.net frame allow
-mangolanguages.com d1w9q16ymlsf74.cloudfront.net script allow
-mangolanguages.com d1w9q16ymlsf74.cloudfront.net xhr allow
-mangolanguages.com mango-assets-production.s3.amazonaws.com xhr allow
-mangolanguages.com translation.googleapis.com xhr allow
-mangolanguages.com use.typekit.net script allow
-```
-
-## Graphics
-
-### Zeplin
-
-**Info**
-
-* Throws an error if Stripe does not get loaded.
-* Uses Pusher for real time updates.
-
-**3rd-party services to whitelist:**
-
-* [Stripe](https://stripe.com) payments
-* [Pusher](https://pusher.com) service
-
-```
-zeplin.io checkout.stripe.com frame allow
-zeplin.io checkout.stripe.com script allow
-zeplin.io checkout.stripe.com xhr allow
-zeplin.io ws-zeplin.pusher.com xhr allow
-```
-
-## Bookmarking services
-
-### Pocket
-
-**Info**
-
-* You can not login without whitelisting reCAPTCHA.
-
-**3rd-party services to whitelist:**
-
-* [Google's reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA)
-
-```
-getpocket.com google.com frame allow
-getpocket.com google.com image allow
-getpocket.com google.com script allow
-getpocket.com google.com xhr allow
-getpocket.com www.gstatic.com script allow
-```
-
-### Instapaper
-
-**3rd-party services to whitelist:**
-
-* [Amazon Web Services (AWS) S3](https://en.wikipedia.org/wiki/Amazon_S3)
-
-```
-instapaper.com staticinstapaper.s3.amazonaws.com script allow
-```
-
 ## Question & Answer websites
 
 ### Stack Overflow
@@ -374,33 +193,7 @@ stackoverflow.com ajax.googleapis.com script allow
 stackoverflow.com cdn.sstatic.net script allow
 ```
 
-## Presentation sharing
-
-### Speakerdeck
-
-**3rd-party services to whitelist:**
-
-* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
-  Delivery Network
-
-```
-speakerdeck.com d2dfho4r6t7asi.cloudfront.net script allow
-```
-
 ## Social networking
-
-### Meetup
-
-**3rd-party services to whitelist:**
-
-* [Amazon's Cloudfront](https://en.wikipedia.org/wiki/Amazon_CloudFront) Content
-  Delivery Network
-
-```
-meetup.com dna8twue3dlxq.cloudfront.net script allow
-meetup.com secure.meetupstatic.com script allow
-meetup.com secure.meetupstatic.com xhr allow
-```
 
 ## Hotels / renting services
 
@@ -412,13 +205,6 @@ airbnb.com maps.googleapis.com script allow
 ```
 
 ## Music
-
-### Bandcamp
-
-```
-bandcamp.com s4.bcbits.com script allow
-bandcamp.com t4.bcbits.com media allow
-```
 
 ### Soundcloud
 
