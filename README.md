@@ -38,8 +38,17 @@ Sources for some of the rules:
 ```
 * facebook.com * block
 * facebook.net * block
+* fbcdn.com * block
+* fbcdn.net * block
+* fbsbx.com * block
+* fbsbx.net * block
+* tfbnw.net * block
 facebook.com facebook.com * allow
+facebook.com facebook.net * allow
+facebook.com fbcdn.com * allow
 facebook.com fbcdn.net * allow
+facebook.com fbsbx.com * allow
+facebook.com fbsbx.net * allow
 ```
 
 ### Twitter
